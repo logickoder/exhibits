@@ -7,7 +7,6 @@ plugins {
 val composeVersion = rootProject.extra.get("compose_version") as String
 val kotlinVersion = rootProject.extra.get("kotlin_version") as String
 val ktorVersion = rootProject.extra.get("ktor_version") as String
-val hiltVersion = rootProject.extra.get("hilt_version") as String
 
 android {
     compileSdk = 32
@@ -124,3 +123,4 @@ android {
         androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
         androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
     }
+}
