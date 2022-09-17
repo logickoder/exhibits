@@ -18,12 +18,12 @@ fun ExhibitItems(
 ) {
     LazyColumn(
         modifier = modifier,
-        contentPadding = PaddingValues(24.dp, 16.dp, 0.dp, 16.dp),
+        contentPadding = PaddingValues(top = 16.dp, bottom = 16.dp),
         content = {
             items(items) { item ->
                 ExhibitItem(
                     exhibit = item,
-                    modifier = modifier.padding(bottom = 16.dp),
+                    modifier = modifier.padding(bottom = 16.dp, start = 24.dp),
                 )
             }
         }

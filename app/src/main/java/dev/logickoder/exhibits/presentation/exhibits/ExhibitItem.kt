@@ -33,6 +33,7 @@ fun ExhibitItem(
     modifier: Modifier = Modifier,
 ) {
     Column(
+        modifier = modifier,
         verticalArrangement = Arrangement.spacedBy(8.dp),
         content = {
             Text(
@@ -41,7 +42,7 @@ fun ExhibitItem(
                 style = MaterialTheme.typography.h6
             )
             Row(
-                modifier = modifier.horizontalScroll(rememberScrollState()),
+                modifier = Modifier.horizontalScroll(rememberScrollState()),
                 content = {
                     exhibit.images.forEach { image ->
                         ExhibitImageItem(
